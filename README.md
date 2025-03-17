@@ -23,6 +23,7 @@ The process continues until no better neighboring solution can be found, indicat
         git clone https://github.com/TanerYSLY/Hill_Climbing_Algorithm.git
         cd Hill_Climbing_Algorithm
 
+
 2.Install the required dependencies:
 
         ```bash
