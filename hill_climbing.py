@@ -1,4 +1,5 @@
 import random 
+import os
 
 #the locations are specified using rows and columns that is why there are the parameters of this method
 
@@ -67,11 +68,16 @@ class Space: #this is our problem space we are trying to optimize the distance o
                         "white"  # background color
                         )
     
-        house = Image.open("c:/Users/taner/OneDrive/Masaüstü/notlar/FEF 210/kodlar/zeki_opt/hill climbing/assets/images/house.png")\
+        base_path = os.path.dirname(__file__)
+        house_path = os.path.join(base_path, "assets/images/House.png")
+        hospital_path = os.path.join(base_path, "assets/images/Hospital.png")
+        font_path = os.path.join(base_path, "assets/fonts/arial.ttf")
+    
+        house = Image.open(house_path)\
             .resize((cell_size, cell_size))  # open the image of the house and resize it to the cell size
-        hospital = Image.open("c:/Users/taner/OneDrive/Masaüstü/notlar/FEF 210/kodlar/zeki_opt/hill climbing/assets/images/hospital.png") \
+        hospital = Image.open(hospital_path) \
             .resize((cell_size, cell_size))  # open the image of the hospital and resize it to the cell size
-        fonts = ImageFont.truetype("c:/Users/taner/OneDrive/Masaüstü/notlar/FEF 210/kodlar/zeki_opt/hill climbing/assets/fonts/arial.ttf", 30)  # font of the text
+        fonts = ImageFont.truetype(font_path, 30)  # font of the text
         draw = ImageDraw.Draw(img)
     
         for i in range(self.height):
