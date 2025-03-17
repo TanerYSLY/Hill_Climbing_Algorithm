@@ -94,7 +94,7 @@ hospitals = s.hill_climb(image_prefix="hospitals", log=True)
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Sources 
+## Sources 
 - https://www.youtube.com/watch?v=sBzpqLuSDyY
 
 ## Author
