@@ -19,22 +19,26 @@ The process continues until no better neighboring solution can be found, indicat
 
 1.Clone the repository:
 
+        ```bash
         git clone https://github.com/TanerYSLY/Hill_Climbing_Algorithm.git
         cd Hill_Climbing_Algorithm
 
 2.Install the required dependencies:
 
+        ```bash
         pip install pillow
 
 ## Usage
 
 1.Create a space with the desired dimensions and number of hospitals:
 
+        ```python
         from hill_climbing import Space
         s = Space(height=6, width=12, num_hospitals=2)
 
 2.Add houses to the space:
 
+        ```python
         import random
 
         for i in range(5):  # Adding 5 houses
@@ -42,6 +46,7 @@ The process continues until no better neighboring solution can be found, indicat
 
 3.Perform the hill climbing optimization and generate images:
 
+        ```python
         hospitals = s.hill_climb(image_prefix="hospitals", log=True)
 
 4.The images representing the optimization process will be saved with the specified prefix (hospitals in this case).
@@ -49,6 +54,7 @@ The process continues until no better neighboring solution can be found, indicat
 ## Example
 Here's an example of how to use the provided code:
 
+        ```python
         from hill_climbing import Space
         import random
 
